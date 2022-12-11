@@ -240,7 +240,6 @@ function getArtistByIndex(array, index) {
 }
 
 getArtistByIndex(artists, 0)
-console.log('task 3', getArtistByIndex(artists, 0))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
