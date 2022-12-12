@@ -302,14 +302,15 @@ Use addArtist to do the following:
 //   /*Your Code Here*/
 // }
 
-const newObject = { name, years, genre, nationality, bio}
-function addArtist(arr, newObject) {
+
+function addArtist(arr, name, years, genre, nationality, bio) {
   /*Your Code Here*/
+  const newObject = { name, years, genre, nationality, bio}
   arr.push(newObject);
   return arr;
 }
-
-
+// addArtist(artists, 'Zach', '1997-20', 'your fav', 'white','here to serve')
+// console.log('task 6', addArtist())
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -319,11 +320,17 @@ Use lotsOfArt to do the following:
 🌟 EXAMPLE: lotsOfArt(artists) will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]
 */
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+ let newArr = [];
+ for(let i = 0; i < array.length; i++){
+  if(array[i].paintings > 100){
+    newArr.push(array[i].name);
+  }
+ }
+return newArr
 }
 
-
+console.log('task 7', lotsOfArt(artists))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use artistInfo to do the following: 
